@@ -1,0 +1,69 @@
+P.S. This was my 12th standard final Project so I had to show this program to the external invigilator on the day of final practicals. I didn't expect that but it was fun!
+
+
+-> Understanding Modules Imported:
+
+8 modules/libraries imported:
+pyttsx3, speech_recognition, datetime, wikipedia, webbrowser, OS, smtplib, random.
+
+import is a python command which connects/embedds other python modules to current program.
+
+pyttsx3 is a text to speech conversion library in python.
+
+speech_recognition is a Library for performing speech recognition.In speechrecognition as sr (sr is alias).
+
+datetime is a module which allows the use of current date and time of the system in python.
+
+Wikipedia is a Python library that makes it easy to access and parse data from Wikipedia.
+	
+webbrowser is a module which connects my assistant with the webbrowser. By default the webbrowser is internet explorer. 
+    To open Chrome,
+	chrome_path = 'C:\\Path\\Chrome.exe'
+	webbrowser.get(chrome_path).open('www.google.com')
+
+OS is a module which helps performing the tasks within the system, like opening a file, etc. 
+
+smtplib stands for simple mail transfer protocol. this module is used to send mail to any internet machine.
+
+random module generates pseudo-random numbers(both float and integers). 
+	[This module cannot be used for security puproses, secrets module is used instead.]
+
+
+
+
+Understanding the main code:
+
+getProperty function gets the current property of variable.
+setProperty function changes or adds propert of variiable.
+
+SAPI5 (speech appliocation programming interface) is an API developed by Microsoft to easily allow the use of speech recognition and speech synthesis within windows applications. SAPI5 is the latest version.
+
+__init__ refrences the module itself.
+
+I embedded wikipedia to my program using import wikipedia so that each time user needs any information, the program can provide it by searching about it on wikipedia.
+
+pyttsx3.init() function gives a reference to a pyttsx3.Engine.
+
+runAndWait() is a function which blocks further commands until prior commands are executed.
+
+datetime.datetime.now().hour gives the current hour.
+datetime.datetime,now().strftime('%H:%M:%S') guves the current time in the format of Hour:Minute:seconds.
+	[if we use from datetime import datetime, the the code will be datetime.now().hour]
+
+except is used to prevent the program from running into any abnormal conditions.
+
+smtplib.SMTP('smtp.google.com', 587) is used to select server. In our case, we selected server as google with port = 587
+
+server.ehlo() is used to identify ourselves with an extended simple mail transfer protocol(ESMTP).
+
+SMTP.starttls() will establish a connection in TLS(Transport Layer Security) mode, here, all data SMTP will be encrypted. ehlo is needed to use TLS. 
+
+SMTP.sendmail(from_addr, to_addrs, msg) is command to send mail.
+
+When python runs a program, it assigns a __name__ to it. If the program is being runned as the main program, then its name will be __main__. and if the program is already running and we open another instance of it, than, it wont run as it wont have name __main__.
+
+.lower() will return the string data in lowercase.
+
+.replace(a,b) is an amazing inbuild function which will replace all occurances of the string 'a' with string 'b' in the query.
+
+
