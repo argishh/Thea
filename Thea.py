@@ -1,42 +1,7 @@
-#####        This is an program which works on user's Voice Commands!            #####
-#####        Just like an Personal Assistant, Its got its own name -- Thea!      #####
-#####        This program has its own voice and can speak to reply!              #####
-
-''' 
-This program can specifically open:
-     -- Google
-     -- Yahoo
-     -- Youtube
-     -- Netflix
-     -- Gmail
-     -- Stackoverflow
-     -- Spotify 
-     -- Wikipedia
-     -- Twitter
-     -- Facebook
-     -- Instagram
-     -- Reddit
-     -- Amazon
-     -- Flipkart
-     -- Python(IDLE)
-     -- Visual Studio Code (VSCode)
-
-This program can also:
-     -- Perform a wikipedia search
-    -- Perform a google search
-     -- Tell the time
-     -- Play Music
-     -- Send an email
-     -- Tell a random number
-     -- Crack a Joke
-     -- Can reply to certain keywords
-'''
-
-#  To search on wikipedia, say "Search <topic> on wikipedia". 
-#  To play music, say "Play Music". This will play a random song from the folder assigned.
+#  To search on google/ youtube/ wikipedia, say "Search <topic> wikipedia/ gooogle/ youtube". 
+#  To play music, say "Play Music". This will play a random song from spotify.
 
 #  Importing Modules
-
 import pyttsx3 
 import speech_recognition as sr 
 import datetime
